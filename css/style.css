@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 90%;
+    padding: 50px 5% 125px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    font-size: 84px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 -350px;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 24px;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header * {
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 55px;
+}
+
+.dropbtn
+{
+  width: 45px;
+}
+
+.dropbtn::after {
+    background: rgba(255, 255, 255, 0) url("../image/arrow-down.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 16px;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    background-image: url('../image/background.png');
+    background-size: cover;
+    height: 1080px;
+    position: relative;
+}
+
+.a-button {
+    font-size: 32px;
+    color:white;
+    text-decoration: underline;
+}
+
+.projects {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.block-button {
+    position: absolute;
+    padding: 175px 0 0 5%;
+}
+
+.image1, .image2 {
+    width: 49.5%;
+    height: 1080px;
+}
+
+.image1 {
+    background-image: url('../image/image\ 6.png');
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url('../image/image\ 7.png');
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
