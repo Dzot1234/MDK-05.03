@@ -1,3 +1,12 @@
+:root {
+    --font-size84: 84px;
+    --font-size32: 32px;
+    --font-size24: 24px;
+    --font-size20: 20px;
+    --black-color: black;
+    --white-color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,11 +18,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--white-color);
+
 }
 
 .logo {
-    font-size: 84px;
+    font-size: var(--font-size84);
+    font-family: 'Futuralightc';
 }
 
 nav ul {
@@ -24,13 +35,14 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 24px;
+    font-size: var(--font-size24);
     margin: 0 50px;
+    font-family: 'MontserratRegular';
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
 }
 
 header * {
@@ -46,14 +58,16 @@ header * {
 .dropdown {
     position: relative;
     display: inline-block;
-    color: white;
-    font-size: 20px;
+    color: var(--white-color);
+    font-size: var(--font-size20);
+    font-family: 'MontserratRegular';
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--white-color);
+    font-family: 'MontserratRegular';
     width: 55px;
 }
 
@@ -63,7 +77,7 @@ header * {
 }
 
 .dropbtn::after {
-    background: rgba(255, 255, 255, 0) url("../image/arrow-down.png") no-repeat scroll center center;
+    background: url("../image/arrow-down.png") no-repeat scroll center center;
     content: "";
     height: 16px;
     position: absolute;
@@ -74,7 +88,7 @@ header * {
 
 
 .dropdown-content a {
-    color: black;
+    color: var(--black-color);
     padding: 2px 0 2px 5px;
     text-decoration: none;
     display: block;
@@ -95,8 +109,10 @@ main {
 
 .a-button {
     font-size: 32px;
-    color:white;
-    text-decoration: underline;
+    color:var(--white-color);
+    text-decoration: solid underline 2px;
+    text-underline-offset: 3px;
+    font-family: 'MontserratMedium';
 }
 
 .projects {
@@ -132,9 +148,82 @@ main {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 90%;
+    margin: 50px auto 50px auto;
+    font-size: var(--font-size24);
+    font-family: 'MontserratMedium';
+}
+
+.column {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.columns {
+    padding: 20px 0 20px 0;
+}
+
+.column ul {
     margin: 0 auto;
+}
+
+.column ul li {
+    margin: 0 0 10px 0;
+    display: flex;
+    font-size: var(--font-size24);
+    font-family: 'Futuralightc';
+}
+
+.columns-line {
+    max-height: 25%;
+    min-width: 2px;
+    background-color: black;
+}
+
+.icons {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.telephone1 {
+    background-image: url('../image/tel1.png');
+    background-size: cover;
+}
+.telephone2 {
+    background-image: url('../image/tel2.png');
+    background-size: cover;
+}
+.telegram {
+    background-image: url('../image/telgram.png');
+    background-size: cover;
+}
+.mail {
+    background-image: url('../image/mail.png');
+    background-size: cover;
+}
+.vk {
+    margin-left: 20px;
+    background-image: url('../image/vk.png');
+    background-size: cover;
+}
+.facebook {
+    background-image: url('../image/face.png');
+    background-size: cover;
+}
+.inst {
+    background-image: url('../image/insta.png');
+    background-size: cover;
+}
+
+.contact {
+    font-size: var(--font-size32);
+    font-family: 'MontserratMedium';
+}
+
+.footer-last-text {
+    color: rgb(97, 97, 97);
+    font-size: var(--font-size20);
 }

@@ -1,0 +1,16 @@
+@font-face {
+font-family: 'MontserratMedium';
+src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+font-family: 'MontserratMediumItalic';
+src: url('/fonts/Montserrat-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+font-family: 'MontserratRegular';
+src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Futuralightc';
+src: url('/fonts/futuralightc.ttf') format('truetype');
+}
